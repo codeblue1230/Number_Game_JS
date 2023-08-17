@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body onload="getRandomNum()">
+    
+    <div id="parent_div">
+        <h3>Guess a Number From 0 to 50</h3>
+        <form>
+            <input type="text" id="numInput" autocomplete="off"><br>
+            <button type="button" id="numButton">Check</button>
+            <button type="submit" id="replayButton">Replay</button>
+        </form>
+        <p id="userChance"></p>
+        <p id="clue"></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(86, 54, 54);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#parent_div {
+    background-color: rgb(0, 139, 139);
+    padding: 0 20px 0 20px;
+    border: solid rgb(255, 255, 255) 4px;
+    border-radius: 10px;
+}
+
+#replayButton {
+    display: none;
+    margin: 20px auto 0 auto;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: solid 2px;
+    border-radius: 5px;
+    font-size: large;
+    padding: 8px;
+    max-width: 75%;
+}
+
+button {
+    background-color: black;
+    border: solid 2px;
+    color: white;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: large;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+}
