@@ -25,7 +25,9 @@ let chances = 4
 // enters a valid whole number from 0 to 50
 const numberCheck = () => {
     if (userNum.value.trim().length == 0 || Number(userNum.value) < 0 || Number(userNum.value) > 50) {
-        clue.innerHTML = "Make sure to enter a valid whole number from 0 to 50"
+        if (chances !== 0) {
+            clue.innerHTML = "Make sure to enter a valid whole number from 0 to 50"
+        }
     }
     else if (Number.isInteger(Number(userNum.value))) {
         if (Number(userNum.value) === randomNumber) {
@@ -59,7 +61,9 @@ const numberCheck = () => {
         }
     }
     else {
-        clue.innerHTML = "Make sure to enter a valid whole number from 0 to 50"
+        if (chances !== 0) {
+            clue.innerHTML = "Make sure to enter a valid whole number from 0 to 50"
+        }
     }
 }
 
